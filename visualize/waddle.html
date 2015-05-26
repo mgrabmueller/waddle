@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Waddle - WAD viewer</title>
+
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+/*        background-color: black;*/
+      }
+      div#main-container {
+        padding: 0px;
+        margin: 0px;
+/*        background: black;*/
+      }
+      #main-canvas {
+        padding: 0px;
+        margin: 0px;
+      }
+    </style>
+
+  </head> 
+  <body>
+    <div id="main-container">
+      <canvas id="main-canvas">
+        Your browser does not support the HTML5 Canvas feature. This
+        game uses new HTML5 features and will only work on the latest
+        versions of Firefox, Safari or Chrome (and maybe Internet
+        Explorer 9).
+      </canvas>
+      <canvas id="screen-canvas">
+      </canvas>
+    </div>
+    <script src="data/level-E1M1.js"></script>
+    <script src="data/level-E1M2.js"></script>
+    <script src="data/level-E1M3.js"></script>
+    <script src="data/level-E1M4.js"></script>
+    <script src="data/level-E1M5.js"></script>
+    <script src="data/level-E1M6.js"></script>
+    <script src="data/level-E1M7.js"></script>
+    <script src="data/level-E1M8.js"></script>
+    <script src="data/level-E1M9.js"></script>
+    <script src="data/level-E2M1.js"></script>
+    <script src="data/level-E2M2.js"></script>
+    <script src="data/level-E2M3.js"></script>
+    <script src="data/level-E2M4.js"></script>
+    <script src="data/level-E2M5.js"></script>
+    <script src="data/level-E2M6.js"></script>
+    <script src="data/level-E2M7.js"></script>
+    <script src="data/level-E2M8.js"></script>
+    <script src="data/level-E2M9.js"></script>
+    <script src="data/level-E3M1.js"></script>
+    <script src="data/level-E3M2.js"></script>
+    <script src="data/level-E3M3.js"></script>
+    <script src="data/level-E3M4.js"></script>
+    <script src="data/level-E3M5.js"></script>
+    <script src="data/level-E3M6.js"></script>
+    <script src="data/level-E3M7.js"></script>
+    <script src="data/level-E3M8.js"></script>
+    <script src="data/level-E3M9.js"></script>
+    <script src="data/level-E4M1.js"></script>
+    <script src="data/level-E4M2.js"></script>
+    <script src="data/level-E4M3.js"></script>
+    <script src="data/level-E4M4.js"></script>
+    <script src="data/level-E4M5.js"></script>
+    <script src="data/level-E4M6.js"></script>
+    <script src="data/level-E4M7.js"></script>
+    <script src="data/level-E4M8.js"></script>
+    <script src="data/level-E4M9.js"></script>
+
+    <script src="data/level-MAP01.js"></script>
+    <script src="data/level-MAP02.js"></script>
+    <script src="data/level-MAP03.js"></script>
+    <script src="data/level-MAP04.js"></script>
+    <script src="data/level-MAP05.js"></script>
+    <script src="data/level-MAP06.js"></script>
+    <script src="data/level-MAP07.js"></script>
+    <script src="data/level-MAP08.js"></script>
+    <script src="data/level-MAP09.js"></script>
+    <script src="data/level-MAP10.js"></script>
+    <script src="data/level-MAP11.js"></script>
+    <script src="data/level-MAP12.js"></script>
+    <script src="data/level-MAP13.js"></script>
+    <script src="data/level-MAP14.js"></script>
+    <script src="data/level-MAP15.js"></script>
+    <script src="data/level-MAP16.js"></script>
+    <script src="data/level-MAP17.js"></script>
+    <script src="data/level-MAP18.js"></script>
+    <script src="data/level-MAP19.js"></script>
+    <script src="data/level-MAP20.js"></script>
+    <script src="data/level-MAP21.js"></script>
+    <script src="data/level-MAP22.js"></script>
+    <script src="data/level-MAP23.js"></script>
+    <script src="data/level-MAP24.js"></script>
+    <script src="data/level-MAP25.js"></script>
+    <script src="data/level-MAP26.js"></script>
+    <script src="data/level-MAP27.js"></script>
+    <script src="data/level-MAP28.js"></script>
+    <script src="data/level-MAP29.js"></script>
+    <script src="data/level-MAP30.js"></script>
+    <script src="data/level-MAP31.js"></script>
+    <script src="data/level-MAP32.js"></script>
+
+    <script src="data/levels.js"></script>
+    <script src="data/sprites.js"></script>
+    <script src="data/textures.js"></script>
+    <script src="data/patches.js"></script>
+    <script src="data/pnames.js"></script>
+    <script src="data/palettes.js"></script>
+    <script src="data/colormap.js"></script>
+    <script src="data/flats.js"></script>
+
+    <div>
+    <label for="level">Levels:</label>
+    <select id="levels">
+      <option>---</option>
+    </select>
+    <label for="sprites">Sprites:</label>
+    <select id="sprites">
+      <option>---</option>
+    </select>
+    <label for="textures">Textures:</label>
+    <select id="textures">
+      <option>---</option>
+    </select>
+    <label for="patches">Patches:</label>
+    <select id="patches">
+      <option>---</option>
+    </select>
+    <label for="flats">Flats:</label>
+    <select id="flats">
+      <option>---</option>
+    </select>
+    </div>
+
+    <div>
+      <label for="drawLineDefs">Draw linedefs:</label>
+      <input type="checkbox" id="drawLineDefs" checked="checked"/>
+
+      <label for="drawSegs">Draw segs:</label>
+      <input type="checkbox" id="drawSegs"/>
+
+      <label for="drawNodes">Draw nodes:</label>
+      <input type="checkbox" id="drawNodes"/>
+
+      <label for="drawGrid">Draw grid:</label>
+      <input type="checkbox" id="drawGrid"/>
+
+      <label for="drawThings">Draw things:</label>
+      <input type="checkbox" id="drawThings"/>
+    </div>
+    
+    <script src="waddle.js"></script>
+
+  </body>
+</html>
