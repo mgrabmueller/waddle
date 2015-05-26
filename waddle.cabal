@@ -1,5 +1,5 @@
 name:                waddle
-version:             0.1.0.5
+version:             0.1.0.6
 synopsis:            DOOM WAD file utilities.
 description:         Library for reading WAD files as used by the DOOM engine into Haskell types.
 homepage:            https://github.com/mgrabmueller/waddle

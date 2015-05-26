@@ -1,3 +1,5 @@
+## 0.1.0.6
+
 ## 0.1.0.5
 
 * Add GIF animation export for image export utility.
