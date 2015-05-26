@@ -1,6 +1,7 @@
 ## 0.1.0.5
 
 * Add GIF animation export for image export utility.
+* Updated waddle.cabal to include links to Github resources.
 
 ## 0.1.0.4
 
