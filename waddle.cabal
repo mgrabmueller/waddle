@@ -2,6 +2,8 @@ name:                waddle
 version:             0.1.0.5
 synopsis:            DOOM WAD file utilities.
 description:         Library for reading WAD files as used by the DOOM engine into Haskell types.
+homepage:            https://github.com/mgrabmueller/waddle
+bug-reports:         https://github.com/mgrabmueller/waddle/issues
 license:             BSD3
 license-file:        LICENSE
 author:              Martin Grabmueller
@@ -13,6 +15,10 @@ extra-source-files:
   README.md, ChangeLog.md,
   visualize/waddle.html, visualize/waddle.js
 cabal-version:       >=1.10
+
+source-repository head
+  type:     git
+  location: https://github.com/mgrabmueller/waddle
 
 library
   exposed-modules:
